@@ -9,5 +9,9 @@
 #import <Foundation/Foundation.h>
 
 @interface divvyClass : NSObject
+@property (readonly) NSString *stName;
+@property (readonly) NSString *availableBikes;
 
+
+-(instancetype)initWithJSONData:(NSDictionary *)jsonData;
 @end

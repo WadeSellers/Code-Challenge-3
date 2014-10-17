@@ -9,5 +9,26 @@
 #import "divvyClass.h"
 
 @implementation divvyClass
+NSDictionary *json;
+
+
+-(instancetype)initWithJSONData:(NSDictionary *)jsonData{
+    self = [super init];
+    if(self){
+        json = jsonData;
+
+    }
+    return self;
+}
+
+-(NSString *)stName{
+    return json [@"stAddress1"];
+}
+
+-(NSString *)availableBikes{
+    return json [@"availableBikes"];
+}
+
+
 
 @end
